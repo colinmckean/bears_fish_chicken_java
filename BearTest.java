@@ -73,7 +73,8 @@ public class BearTest {
     assertEquals(1200, bear.totalNutrition());
     Edible food = bear.throwUp();
     assertEquals(1150, bear.totalNutrition());
-
+    Salmon original = (Salmon)food;
+    assertEquals("swimming", original.swim());
   }
 
 }
